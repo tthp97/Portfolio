@@ -5,13 +5,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ProfilDescription from "./pages/ProfilDescription";
 import ProjetRéalisés from "./pages/ProjetRéalisés";
+import ".//style/General.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/Portfolio/" element={<Home />} />
+        <Route path="/Portfolio" element={<Home />} />
         <Route path="/Portfolio/Profil" element={<ProfilDescription />} />
         <Route path="/Portfolio/Projets" element={<ProjetRéalisés />} />
       </Routes>

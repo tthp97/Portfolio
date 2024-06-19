@@ -15,7 +15,7 @@ export default function Home() {
             <section className="contact">
               <a href="https://www.instagram.com/tthp97/">Instagram</a>
               <a href="https://github.com/tthp97">GitHub</a>
-              <Link to="/Profil">Visiter mon profil</Link>
+              <Link to="/Portfolio/Profil">Visiter mon profil</Link>
             </section>
           </div>
           <div className="apercuProjet">
