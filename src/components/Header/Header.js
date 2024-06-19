@@ -6,9 +6,9 @@ export default function Header() {
     <>
       <header>
         <nav>
-          <Link to="Portfolio">Accueil</Link>
-          <Link to="/Profil">Profil</Link>
-          <Link to="/Projets">Projets</Link>
+          <Link to="/Portfolio/">Accueil</Link>
+          <Link to="/Portfolio/Profil">Profil</Link>
+          <Link to="/Portfolio/Projets">Projets</Link>
         </nav>
       </header>
     </>

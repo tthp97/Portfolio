@@ -1,12 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ProfilDescription from "./pages/ProfilDescription";
+import ProjetRéalisés from "./pages/ProjetRéalisés";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Portfolio/" element={<Home />} />
+        <Route path="/Portfolio/Profil" element={<ProfilDescription />} />
+        <Route path="/Portfolio/Projets" element={<ProjetRéalisés />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
